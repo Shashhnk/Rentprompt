@@ -1,26 +1,43 @@
 import 'package:flutter/material.dart';
 
-Widget _bluebutton(String text, void Function() func) {
+Widget bluebutton(String text, void Function() func) {
   return GestureDetector(
-      onTap: func,
-      child: Container(
-          height: 50,
-          width: double.infinity,
-          padding: const EdgeInsets.symmetric(horizontal: 15),
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(8), color: Colors.blue),
-          child: Center(child: Text(text))));
+    onTap: func,
+    child: Container(
+      height: 50,
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      decoration: BoxDecoration(
+          border: Border.all(color: Colors.white),
+          borderRadius: BorderRadius.circular(8),
+          color: Colors.blue),
+      child: Center(
+        child: Text(
+          text,
+          style: const TextStyle(color: Colors.white),
+        ),
+      ),
+    ),
+  );
 }
 
-Widget _whitebutton(String text, void Function() func) {
+Widget whitebutton(String text, void Function() func) {
   return GestureDetector(
-      onTap: func,
-      child: Container(
-          height: 50,
-          width: double.infinity,
-          padding: const EdgeInsets.symmetric(horizontal: 15),
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(8), color: Colors.white),
-          child:
-              Center(child: Text(text, style: TextStyle(color: Colors.blue)))));
+    onTap: func,
+    child: Container(
+      height: 50,
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      decoration: BoxDecoration(
+          border: Border.all(color: Colors.blue),
+          borderRadius: BorderRadius.circular(8),
+          color: Colors.white),
+      child: Center(
+        child: Text(
+          text,
+          style: const TextStyle(color: Colors.blue),
+        ),
+      ),
+    ),
+  );
 }
