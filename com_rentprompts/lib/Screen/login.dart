@@ -5,13 +5,17 @@ class MyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.blue,
-      body: Container(
-        padding: const EdgeInsets.all(20),
-        child: Text('Welcome \n Back', style: TextStyle(color: Colors.white,fontSize:25),
-        ),
-      )
-      );
+    return const Scaffold(
+        backgroundColor: Colors.blue,
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text('Welcome \n Back', style: TextStyle(color: Colors.white, fontSize: 30),),
+            Spacer(),
+            TextField(decoration: InputDecoration(fillColor: Colors.grey,hintText: 'Email'),),
+            TextField(decoration: InputDecoration(fillColor: Colors.grey,hintText: 'Password'),),
+          ],
+        ));
   }
 }

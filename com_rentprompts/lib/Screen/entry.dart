@@ -15,16 +15,18 @@ class Entryscreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Spacer(),
-            Text('Welcome to \n RentPrompts', style: TextStyle(color: Colors.white, fontSize: 30),),
+            const Text('Welcome to \n RentPrompts', style: TextStyle(color: Colors.white, fontSize: 30),),
             const SizedBox(
               height: 20,
             ),
-            ElevatedButton(onPressed: (){}, child: Text('Log in', style: TextStyle(fontSize: 10,color: Colors.blue),)),
-             ElevatedButton(onPressed:  (){}, child: Text ('Sign up', style: TextStyle(fontSize: 10,color: Colors.white),))
+            _bluebutton()
           ],
         ),
       ),
     
     );
   }
+
+
+  
 }
