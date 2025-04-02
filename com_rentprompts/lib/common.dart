@@ -5,6 +5,7 @@ Widget bluebutton(String text, void Function() func) {
     onTap: func,
     child: Container(
       height: 50,
+      
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 20),
       decoration: BoxDecoration(
@@ -14,7 +15,7 @@ Widget bluebutton(String text, void Function() func) {
       child: Center(
         child: Text(
           text,
-          style: const TextStyle(color: Colors.white),
+          style: const TextStyle(fontWeight:FontWeight.bold,color:Colors.white),
         ),
       ),
     ),
@@ -29,13 +30,13 @@ Widget whitebutton(String text, void Function() func) {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 20),
       decoration: BoxDecoration(
-          border: Border.all(color: Colors.blue),
+          border: Border.all(color: Colors.grey),
           borderRadius: BorderRadius.circular(8),
-          color: Colors.white),
+          color: Colors.transparent),
       child: Center(
         child: Text(
           text,
-          style: const TextStyle(color: Colors.blue),
+          style: const TextStyle(fontWeight: FontWeight.bold, color: Color.fromARGB(79, 70, 229, 1)),
         ),
       ),
     ),

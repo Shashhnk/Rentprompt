@@ -3,17 +3,24 @@ import 'package:com_rentprompts/Screen/signup.dart';
 import 'package:com_rentprompts/common.dart';
 import 'package:flutter/material.dart';
 
+
+
+
 class Entryscreen extends StatelessWidget {
   const Entryscreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orange, // Change Your Color HERE
-      body: Container(
+  body: Container(
         height: double.infinity,
         width: double.infinity,
         padding: const EdgeInsets.all(20),
+        decoration:const BoxDecoration(
+          image:DecorationImage(
+            image: AssetImage('assets/images/bg_screen.png'),
+            fit: BoxFit.cover),
+            ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -21,8 +28,8 @@ class Entryscreen extends StatelessWidget {
               height: 40,
             ),
             const Align(
-              alignment: Alignment.centerLeft,
-              child: Text("PLACE YOUR LOGO HERE"),
+              alignment: Alignment.topLeft,
+              child: Image(image: AssetImage('assets/images/white_p.png'),height: 50,width: 100,),
             ),
             const Spacer(),
             const Align(
@@ -53,7 +60,7 @@ class Entryscreen extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return  LogInPage();
+                    return const LogInPage();
                   },
                 ),
               );
