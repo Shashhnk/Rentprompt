@@ -32,7 +32,7 @@ Widget whitebutton(String text, void Function() func) {
       decoration: BoxDecoration(
           border: Border.all(color: Colors.grey),
           borderRadius: BorderRadius.circular(8),
-          color: Colors.transparent),
+          color: Colors.white),
       child: Center(
         child: Text(
           text,

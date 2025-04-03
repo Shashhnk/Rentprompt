@@ -3,9 +3,6 @@ import 'package:com_rentprompts/Screen/signup.dart';
 import 'package:com_rentprompts/common.dart';
 import 'package:flutter/material.dart';
 
-
-
-
 class Entryscreen extends StatelessWidget {
   const Entryscreen({super.key});
 
